@@ -1,0 +1,19 @@
+1ª Regra - Número de Argumentos
+2ª Regra - Tipos diferentes de Argumentos
+3ª Regra - Ordem dos Argumentos
+
+Metaproperty --> @Override
+
+Refatorar um Código?
+
+instaceof --> comparar o tipo do objeto
+
+2 Formas de Casting
+ A) Implícita - natural (int -> float)
+     int a = 10;
+     float num = a;
+ B) Explícita - Forçar a conversar
+    int x = Integer.parseInt("10");
+    int valor = (int) 3.14;
+
+API ORM (Hibernate) --> Reflections e Anotações

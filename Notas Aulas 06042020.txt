@@ -1,0 +1,46 @@
+Notas de Aula 06/04/2020
+
+0 - Observação
+	- Clareza e Legibilidade: característica e boa prática de programação.
+		@Override - Sobreescrita, o método que herdei da classe Pai tem uma versão local que susbtitui
+		a que foi herdade.
+	- List<Object>? - Coleção de dados do tipo Lista (veremos na aula 11)
+	- Predicate? - É um recurso que surgiu a partir do Java 8 com o objetivo de permitir filtro e predicados
+	- Public - que o qualificador de acesso é livre para que todos que conseguem enxergar tenham acesso
+	- Protected - que estejam na mesma estrutura de hierárquia
+
+1 - Classe Abstrata ela tem a presença de uma palavra reserva --> abstract
+
+	A) Definimos um método abstrato: retorno, o nome do método e a assinatura
+	
+		public abstract Cliente retornaPesquisa(int id);
+		
+		a definição da statement se dá por meio {...}
+		
+	B) Características
+		- As classes abstratas devem conter ao menos um método abstrato (método abstrato não possui corpo)
+		- É uma classe, por isso ela pode ser herdade, não consegue criar instancia dela. Tem que usar 
+		  sempre por meio da extensão (extends)
+		- Vantagem de forçar a hierárquia. Em uma herança você não obriga seu filhos a usar os métodos
+		  declarados. Em uma classe abstrat você obriga as classes que extendem a usar o métodos que
+		  foram informados como abstratos.
+		- É um tipo de contrato, ou seja, qualquer modificação terá que ser 'cumprida' por quem aceitou
+		  o contrato. Obrigado a seguir um padrão estabelecido pela classes abstrata.
+		- Quando Eu declaro o método abstrato Eu deixo explicíto que é abstrato. Quando implemento, eu não
+		  coloco a palavra reservada abstract.
+		- É que assim como classe comum, você poderá 'extends' de apenas uma classe.
+		
+		
+2 - Interfaces - Em uma primeira vista lembra uma classe abstrata
+		- Defini-se apenas o cabec do métodos. O corpo do método será 'implementado' pela classe que
+		  implementa a interface.
+		- Todo método em uma interface é por natureza abstrato
+		- Você poderia omitir o qualificador de acesso.
+		- É um tipo de contrato, ou seja, qualquer modificação terá que ser 'cumprida' por quem aceitou
+		  o contrato.
+		- Uma classe pode implementar 0..* interfaces. (Conceito da Herança Múltipla)
+		
+3 - Autoboxing e Unboxing
+	- Númericos: bit, int, long, short, float e double
+	- Processo de conversão gera atrasos
+

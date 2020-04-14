@@ -1,0 +1,24 @@
+1. Classes
+2. Classes Abstratas
+3. Interfaces
+4. Enum - Tipo de Estrutura com uma
+lista de valores constantes
+
+Estado_Civil: Solteira, Namorando, Noiva, 
+Casada, Viuva, Divorciada, Amasiada;
+
+Sexo: Masculino, Feminino e Omisso
+
+Situacao_Produto: Em Produção, Semi Elaborado,
+Em Teste, Reprovado, Aprovado, Reservado,
+Vendido, Devolvido.......
+
+
+try{
+	//Instruções que são observadas
+}catch(<tipoExceptio> v){
+	//Comandos se ocorrer a exception
+}finally{
+	//Comando executados na finalização
+}
+

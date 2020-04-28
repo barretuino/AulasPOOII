@@ -1,0 +1,30 @@
+Notas de Aula - 10 - Coleções - 27/04/2020
+
+1) Array (Vetor / Matriz)
+	- Variaveis tipadas de um único tipo
+	- Definição rígida do número de elementos
+	- Lidas e percorridas posição a posição
+
+2) Coleções
+	- O tipo de uma collection pode ser definido
+em sua instanciação ou quando houver a primeira inserção.
+	- Não possui rigidez em seu tamanho
+	- Leitura ela pode ser feita por referência
+	
+3) Tipos mais utilizados
+	- List: add, remove, contains, isEmpty e sort
+	- Map: 
+
+4) Criar uma coleção
+	I. Não identificada 
+	II. Identificada >= 1.8
+
+* Debugar: significa a execução passo a passo
+	   - a execução com pausa e pontos de observação
+           - a execução assistida (step by step)
+
+5) Map: estrutura de chave e valor
+	Key - atributo chave (não pode se repetir)
+	Value - valor do atributo do mapa
+
+    defindo o type <K, V> --> <Integer, String>

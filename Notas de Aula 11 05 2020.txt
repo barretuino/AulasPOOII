@@ -1,0 +1,60 @@
+Aula 15 - Persistência de Dados com JDBC
+
+   1. JDBC e as formas que existem de conexão com banco de dados
+		A) SQL ANSI - Padrão
+		B) ORM - Hibernate / JOOQ - Classes são anotadas via JPA
+   2. MVC - Model View Controll
+   3. Projeto de Desenvolvimento
+		Trabalho a ser entregue 25/05/2020 - Valendo Nota!!! 1500 pontos
+   
+A) Construindo Projeto	
+	1.1 Habilitar o driver JDBC a partir da aplicação cliente
+		Fábrica de Conexões 
+		Pool de Conexões - Pulmão de conexões (HicariCP / Apache)
+		
+	2.1 Estabelecer uma conexão entre a aplicação cliente e servidor 
+		do banco de dados; 
+			a) Drive comunicação
+			b) URL do Banco
+			C) Usuário
+			D) Senha
+	
+	3.1 Montar e executar a consulta SQL desejada; e 
+		Comando que deseja executar (CRUD ou InvokeProcedure)
+	
+	4.1 Processar no cliente o resultado da consulta. 
+
+B) Padrão MVC
+	# Camada de modelo ou da lógica da aplicação (Model) (Modelagem Conceitual e Repository)
+	# Camada de apresentação ou visualização (View)
+	# Camada de controle ou controlador (Controller) (Controller e Service)
+		
+	Além de dividir a aplicação em três tipos de componentes, 
+	o desenho MVC define as interações entre eles.
+
+	--> O Controlador (controller) envia comandos para o modelo para 
+	atualizar o seu estado (por exemplo, editando um documento). 
+	O controlador também pode enviar comandos para a visão associada para
+	alterar a apresentação da visão do modelo (por exemplo, percorrendo 
+	um documento).
+	
+	--> Um modelo (model) armazena dados e notifica suas visões e 
+	controladores associados quando há uma mudança em seu estado. 
+	Estas notificações permitem que as visões produzam saídas atualizadas 
+	e que os controladores alterem o conjunto de comandos disponíveis. 
+	Uma implementação passiva do MVC monta estas notificações, devido 
+	a aplicação não necessitar delas ou a plataforma de software
+	não suportá-las.
+	
+	--> A visão (view) gera uma representação (Visão) dos dados presentes 
+	no modelo solicitado, fazendo a exibição dos dados, sendo ela por meio
+	de um html ou xml.
+	
+C) DAO - Atividades com o Objeto e o Banco de Dados
+	- Select
+	- Inserção
+	- Alteração
+	- Remoção
+	
+	Objeto --> SQL          		SQL --> Objeto
+	Cliente --> table Cliente		tuplas Cliente --> RS Cliente - Cliente

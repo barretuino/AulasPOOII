@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0"
+	xmlns="http://java.sun.com/xml/ns/persistence"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation= "http://java.sun.com/xml/ns/persistence 
+ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+
+	<!-- MySQL -->
+	<persistence-unit name="computacao" transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<property name="javax.persistence.jdbc.url" 
+						value="jdbc:mysql://localhost/computacao"/>
+			<property name="javax.persistence.jdbc.driver"
+						value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.user"
+						value="root"/>						
+			<property name="javax.persistence.jdbc.password"
+						value="admin"/>
+
+			<!-- validade | update | create | create-drop -->
+			<property name="hibernate.hbm2ddl.auto" value="update"/>	
+			<property name="hibernate.dialect" 
+					value="org.hibernate.dialect.MySQL5InnoDBDialect"/>
+			
+			 <!-- <property name="hibernate.connection.autocommit" value="true"/>-->
+             <!-- <property name="org.hibernate.FlushMode" value="commit"/> -->
+					
+		</properties>
+	</persistence-unit>
+	
+	<!-- Oracle -->
+	<persistence-unit name="pjextensao_oracle" transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<property name="javax.persistence.jdbc.url" 
+						value="jdbc:mysql://localhost/pjextensao"/>
+			<property name="javax.persistence.jdbc.driver"
+						value="org.oracle.jdbc.Driver"/>
+			<property name="javax.persistence.jdbc.user"
+						value="root"/>						
+			<property name="javax.persistence.jdbc.password"
+						value="123@eRtU"/>
+
+			<!-- validade | update | create | create-drop -->
+			<property name="hibernate.hbm2ddl.auto" value="update"/>	
+			<property name="hibernate.dialect" 
+					value="org.hibernate.dialect.OracleDialect"/>
+		</properties>
+	</persistence-unit>
+	
+	<!-- SQL Server -->
+	<persistence-unit name="pjextensao_oracle" transaction-type="RESOURCE_LOCAL">
+		<properties>
+			<property name="javax.persistence.jdbc.url" 
+						value="jdbc:sqlserver://localhost:1443; databaseName=pjExtensao"/>
+			<property name="javax.persistence.jdbc.driver"
+						value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+			<property name="javax.persistence.jdbc.user"
+						value="root"/>						
+			<property name="javax.persistence.jdbc.password"
+						value="123@eRtU"/>
+
+			<!-- validade | update | create | create-drop -->
+			<property name="hibernate.hbm2ddl.auto" value="update"/>	
+			<property name="hibernate.dialect" 
+					value="org.hibernate.dialect.SQLServer2012Dialect"/>
+		</properties>
+	</persistence-unit>
+	
+</persistence>
